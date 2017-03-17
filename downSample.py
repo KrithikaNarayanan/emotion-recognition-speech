@@ -46,12 +46,12 @@ def downsampleWav(src, dst, inrate=16000, outrate=8000, inchannels=1, outchannel
     return True
 
 if __name__ == "__main__":
-    path_in = "../EN_livingalone/test/wav/"
-    path_out = "data/train/wav16/"
+    path_in = "../fip/fau/wav/"
+    path_out = "../fip/fau/data/train/wav8/"
 
     for file in os.listdir(path_in):
         if file.endswith(".wav"):
             src = path_in + file 
-            dst = path_out + file.split(".")[0] + "_16.wav"
+            dst = path_out + file.split(".")[0] + "_8.wav"
             downsampleWav(src, dst)        
 
