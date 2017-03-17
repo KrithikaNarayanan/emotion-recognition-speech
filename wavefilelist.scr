@@ -1,0 +1,4 @@
+#!/bin/tcsh -f
+
+cd /home/krithika/
+ls | grep Ohm >> /home/krithika/wave_file_list.txt
